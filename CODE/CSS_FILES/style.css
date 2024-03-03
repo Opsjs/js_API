@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 75px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+
+    -webkit-box-shadow: 0px 11px 21px 2px rgba(0, 0, 0, 0.68); 
+    box-shadow: 0px 11px 21px 2px rgba(0, 0, 0, 0.68); /* On rajoute une box-shadow au header pour rendre la page plus agréable visuellement.*/}
+.header h1{
+    color: white;
+    margin-bottom: 45px;
+    margin-right: 30px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: space-around;}
+.header h1:hover{
+    color: purple;}
+.header img{
+    width: 65px;
+    filter: invert(100%); /*on applique un filtre négatif au bouton afin de faire apparaître le bouton en blanc plutôt qu'il soit en noit sur noir.*/
+    margin: 5px;}
+#menu_content{
+    font-family: 'Kanit', 'Sans Serif';
+    transition: 1s ;
+    visibility: hidden;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    border: solid 5px black;}
+#menu_content a {
+    margin-left: 15px;}
+#menu_content a:link{
+    color: black;}
+#menu_content a:visited{
+    color: black;}
+content.open {
+    visibility: visible;}
+.biography{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    animation: slideLeft 5s;}
+.biography img{
+    height: 60%;
+    width: 60%;
+    animation: slideLeft 10s;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.68);
+    margin-left: 20px;}
+.resume{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    animation: slideRight 5s;}
+.resume img{
+    height: 60%;
+    width: 60%;
+    margin-right: 15px;
+    animation: slideRight 10s;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.68);}
+.intrigue{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    animation: slideLeft 5s;}
+.intrigue img{
+    height: 90%;
+    width: 90%;
+    animation: slideLeft 10s;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.68);
+margin-left: 20px;}
+.langages{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin: 100px;
+    animation: slideRight 7.5s;}
+#contact{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;}
+#contact a{
+    margin-left: 75px;
+    margin-right: 75px;
+    font-family: 'Kanit', sans-serif;}
+.projet_1{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    gap: 50px;
+    animation: slideLeft 10s;}
+.projet_1 img{
+    height: 60%;
+    width: 60%;
+    animation: slideLeft 10s;}
+.projet_1 img{
+    height: 60%;
+    width: 60%;
+    animation: slideLeft 10s;}
+.projet_2{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    gap: 50px;
+    animation: slideRight 10s;}
+.projet_2 img{
+    height: 60%;
+    width: 60%;
+    animation: slideRight 10s;}
+.projet_3{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    gap: 50px;
+    animation: slideLeft 10s;
+    margin-bottom: 100px;}
+.projet_3 img{
+    height: 60%;
+    width: 60%;
+    animation: slideLeft 10s;} 
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: red;}
+#formulaire_inscription {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin: 25px;}
+.ligne_formulaire_gauche {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;}
+.ligne_formulaire_droite {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;}
+.colonnes {
+    display: flex;
+    gap: 150px;}
+.form {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;}
+.pays {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;}
+#log_erreurs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;}
+@keyframes slideLeft{
+    from{
+        translate: 200%;
+    }
+    to{
+        translate: 0;
+    }}
+@keyframes slideRight{
+    from{
+        translate: -200%;
+    }
+    to{
+        translate: 0;
+    }}
+
+/*Semaine API*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+#packs_gratuits{
+    display: flex;
+}
+
+#packs_gratuits img{ /*On gère les images des packs*/
+    scale: 65%;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 11px 21px 2px rgba(0, 0, 0, 0.68); 
+    box-shadow: 0px 11px 21px 2px rgba(0, 0, 0, 0.68);
+}
+
+.single_pack{ /*On gère les groupes de packs avec leurs boutons respectifs*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button { /*On définit le style des boutons en général*/
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover {
+    scale: 1.2;
+    transition: all 0.5s;
+}
+
+/*on donne des couleurs différentes aux boutons des différents packs*/
+#pack_gratuit_gryffondor{
+    background-color: rgb(255, 92, 60);
+}
+#pack_gratuit_serdaigle{
+    background-color: rgb(74, 74, 233);
+}
+#pack_gratuit_poufsouffle{
+    background-color: rgb(204, 204, 0);
+}
+#pack_gratuit_serpentard{
+    background-color: rgb(0, 124, 0);
+}
+#back_to_packs{
+    background-color: black;
+    color: white;
+    visibility: collapse;
+}
+#HP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#HP p{
+    font-size: 25px;
+}
+#HP img{
+    height: 500px;
+    border-radius: 25%;
+    filter: drop-shadow(15px 5px 5px rgb(0, 0, 0));/* on met une ombre qui suit la forme de l'image avec une couleur de base */
+}
+#packed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+/*on attribue des animations aux packs pour une meilleure expérience visuelle*/
+#gryffondor{
+    animation: slideRight 2.5s;
+}
+#poufsouffle{
+    animation: slideRight 4.5s;    
+}
+#serdaigle{
+    animation: slideLeft 2.5s;
+}
+#serpentard{
+    animation: slideLeft 4.5s;
+}

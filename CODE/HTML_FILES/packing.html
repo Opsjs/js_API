@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouverture Packs</title>
+    <link rel="stylesheet" href="../CSS_FILES/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Oswald:wght@300&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu">
+                <img src="../PICTURES/MENU.png" alt="" id="menu_button">
+            </div>
+            <h1>Ouverture Packs</h1>
+        </div>
+    </header>
+    <main>
+        <div id="menu_content"> <!--div contenant les différentes actions faisables via le menu-->
+            <a href="index.html">Accueil</a>
+            <a href="formulaire.html">Inscription</a>
+            <a href="packing.html">Obtenir Packs</a>
+            <!--<a href="trading.html">Plateforme d'échanges</a> Page à ajouter au moment du travail en php/MySQL-->
+        </div>
+        <div class="content"> <!--contenu principal de la page-->
+            <h2 id="title_packs"><strong> Packs Disponibles </strong></h2>
+            <div id="packs_gratuits">
+                <div class="packs">
+                    <div id="gryffondor">
+                        <div class="single_pack"> <!--on crée des div ayant la même class afin de les gérer plus facilement dans le css-->
+                            <img src="../PICTURES/PACKS CARTES/PACKS_CARTES_HARRY_POTTER_GRYFFONDOR.png" alt="">
+                            <button id="pack_gratuit_gryffondor" type="button">Ouvrir Pack</button>
+                        </div>
+                    </div>
+                    <div id="poufsouffle">
+                        <div class="single_pack"> <!--on crée des div ayant la même class afin de les gérer plsu facilement dans le css-->
+                            <img src="../PICTURES/PACKS CARTES/PACKS_CARTES_HARRY_POTTER_POUFSOUFFLE.png" alt="" >
+                            <button id="pack_gratuit_poufsouffle" type="button">Ouvrir Pack</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="packs">
+                    <div id="serdaigle">
+                        <div class="single_pack"> <!--on crée des div ayant la même class afin de les gérer plsu facilement dans le css-->
+                            <img src="../PICTURES/PACKS CARTES/PACKS_CARTES_HARRY_POTTER_SERDAIGLE.png" alt="">
+                            <button id="pack_gratuit_serdaigle" type="button">Ouvrir Pack</button>
+                        </div>
+                    </div>
+                    <div id="serpentard">
+                        <div class="single_pack"> <!--on crée des div ayant la même class afin de les gérer plsu facilement dans le css-->
+                            <img src="../PICTURES/PACKS CARTES/PACKS_CARTES_HARRY_POTTER_SERPENTARD.png" alt="" >
+                            <button id="pack_gratuit_serpentard" type="button">Ouvrir Pack</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="packed">  <!--on crée un div pour afficher le contenun de la page une fois un pack ouvert-->
+            <div id="HP" style="margin: auto;"></div> <!--la div pour les informations du personnage-->
+            <div id="retour_packs"> <!--le boutons pour retourner aux packs-->
+                <button id="back_to_packs"> Retour aux différents packs</button>
+            </div>
+        </div>
+    </main>
+    <script src="../JS_FILES/main.js"></script> <!--script pour le fonctionnement des éléments présents sur toutes les pages (menu)-->
+    <script src="../JS_FILES/call_api.js"></script> <!--script appelant l'API pour le personnage-->
+</body>
+</html>

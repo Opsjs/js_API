@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="../CSS_FILES/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Oswald:wght@300&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="../PICTURES/MENU.png" alt="" id="menu_button">
+            <h1>Formulaire d'Inscription</h1>
+        </div>
+    </header>
+    <main>
+
+        <div id="menu_content">
+            <a href="index.html">Accueil</a>
+            <a href="formulaire.html">Inscription</a>
+            <a href="packing.html">Obtenir Packs</a>
+        </div>
+
+        <div id="log_erreurs"> <!--on crée une div pour stocker les différentes erreurs dans le formulaire-->
+        </div>
+
+        <form action="" id="formulaire_inscription">
+        <div class="form">
+        <div class="colonnes">
+            
+            <div class="ligne_formulaire_gauche"> <!--On fait une div pour tout les éléments à la gauche du formulaire-->
+                <label for="email"><strong>Adresse mail : </strong></label> <!--on crée le champ pour le mail-->
+                <input type="text" name="email" id="email" placeholder="Email">
+                <br>
+                <label for="nom"><strong>Nom de famille : </strong></label> <!--On crée le champ pour le nom de famille-->
+                <input type="text" name="nom" id="nom" placeholder="Nom">
+                <br>
+                <label for="ville"><strong>Ville : </strong></label> <!--on crée le champ pour la ville-->
+                <input type="text" name="ville" id="ville" placeholder="Ville">
+                <br>
+                <label for="mdp"><strong>Mot de Passe : </strong></label> <!--on crée le champ pour la ville-->
+                <input type="text" name="mdp" id="mdp" placeholder="Mot de Passe">
+            </div>
+            <div class="ligne_formulaire_droite"> <!--on fait une autre div pour les éléments à la droite du formulaire-->
+                <label for="prenom"><strong>Prénom : </strong></label> <!--on crée un champ pour le prénom-->
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                <br>
+                <label for="adresse"><strong>Adresse : </strong></label> <!--on crée un champ pour l'adresse-->
+                <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                <br>
+                <label for="code_postal"><strong>Code Postal : </strong></label> <!--on crée un champ pour le code postal-->
+                <input type="text" name="code_postal" id="code_postal" placeholder="Code Postal">
+                <br>
+                <label for="confirmation_mdp"><strong>Confirmer Mot de Passe : </strong></label> <!--on crée le champ pour la ville-->
+                <input type="text" name="confirmation_mdp" id="confirmation_mdp" placeholder="Confirmer Mot de Passe">
+            </div>
+        </div>
+            
+            <div class="pays">
+                <label for="country"><strong>Nationalité : </strong></label> <!--on crée un champs pour la nationalité-->
+                
+                <select name="country" id="country"> <!--on liste les options données à l'utilisateur pour la nationalité-->
+                    <option value="null">Selectionner un pays</option>
+                    <option value="Français">Français</option>
+                    <option value="Tunisien">Tunisien</option>
+                    <option value="Allemand">Allemand</option>
+                    <option value="Comorien">Comorien</option>
+                    <option value="Vietnamien">Vietnamien</option>
+                    <option value="Belge">Belge</option>
+                    <option value="Portugais">Portugais</option>
+                    <option value="Cambodge">Cambodge</option>
+                    <option value="Chinois">Chinois</option>
+                    <option value="Algérie">Algérie</option>
+                    <option value="Maroc">Maroc</option>
+                    <option value="Sénégal">Sénégal</option>
+                    <option value="Colombie">Colombie</option>
+                    <option value="Bulgarie">Bulgarie</option>
+                </select>
+            </div>
+        </div>
+            <br>
+            <br>
+        
+            <input type="submit" value="Soumettre"> <!--On crée un bouton de soumission-->
+        </form>
+    </main>
+    <div id="confirmation"> <!--on crée une div pour afficher le message de confirmation après l'envoi du formulaire-->
+    </div>
+    <script src="../JS_FILES/main.js"></script>
+    <script src="../JS_FILES/formulaire.js"></script>
+</body>
+</html>
